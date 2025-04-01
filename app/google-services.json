@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "96390001878",
+    "project_id": "rugby-ec35c",
+    "storage_bucket": "rugby-ec35c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96390001878:android:507f0cc6081f6665640577",
+        "android_client_info": {
+          "package_name": "com.ruggers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeHCvrfPDVJkrPrqr6AdaVE9AGEMKlqaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

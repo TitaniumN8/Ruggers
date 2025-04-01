@@ -1,0 +1,2 @@
+search games by date
+	that'll provide game ID, teams (home and away), logos, Status(NS:Not Started), Scores(Home and Away) 
