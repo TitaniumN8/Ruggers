@@ -3,8 +3,20 @@ plugins {
     id 'com.google.gms.google-services'
 }
 
+// The RapidAPI key is read from local.properties (not committed), e.g.
+//   RAPIDAPI_KEY=your_key_here
+def localProps = new Properties()
+def localPropsFile = rootProject.file('local.properties')
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { localProps.load(it) }
+}
+
 android {
     compileSdkVersion 34
+
+    buildFeatures {
+        buildConfig true
+    }
 
     defaultConfig {
         applicationId "com.ruggers"
@@ -14,6 +26,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "RAPIDAPI_KEY", "\"${localProps.getProperty('RAPIDAPI_KEY', '')}\""
     }
 
     buildTypes {

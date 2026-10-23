@@ -49,7 +49,7 @@ public class FrontPage extends AppCompatActivity implements DatePickerDialog.OnD
     private ArrayList<Fixture> fixtureArrayList;
 
     private String date;
-    public static final String API_KEY = "f54127215emsh516e2589989823dp11c312jsne39d22b3b66f";
+    public static final String API_KEY = com.ruggers.BuildConfig.RAPIDAPI_KEY;
     public static final String API_HOST ="api-rugby.p.rapidapi.com";
 
     @SuppressLint("MissingInflatedId")
@@ -160,7 +160,7 @@ public class FrontPage extends AppCompatActivity implements DatePickerDialog.OnD
         Request request = new Request.Builder()
                 .url("https://api-rugby.p.rapidapi.com/games?date="+date)  //+"&league=51&season=2023")
                 .get()
-                .addHeader("X-RapidAPI-Key", "f54127215emsh516e2589989823dp11c312jsne39d22b3b66f")
+                .addHeader("X-RapidAPI-Key", API_KEY)
                 .addHeader("X-RapidAPI-Host", "api-rugby.p.rapidapi.com")
                 .build();
 
@@ -233,7 +233,7 @@ public class FrontPage extends AppCompatActivity implements DatePickerDialog.OnD
         Request request = new Request.Builder()
                 .url("https://api-rugby.p.rapidapi.com/games?date=2023-02-04&league=51&season=2023")
                 .get()
-                .addHeader("X-RapidAPI-Key", "f54127215emsh516e2589989823dp11c312jsne39d22b3b66f")
+                .addHeader("X-RapidAPI-Key", API_KEY)
                 .addHeader("X-RapidAPI-Host", "api-rugby.p.rapidapi.com")
                 .build();
 
