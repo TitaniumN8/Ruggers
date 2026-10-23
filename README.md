@@ -2,14 +2,12 @@
 
 An Android app for following rugby matches and making match predictions with virtual coins. Pick a date to see that day's fixtures and results, open a match to see the bookmaker odds, and back the home team, the away team or a draw. Your wallet settles each prediction automatically once the real result comes in.
 
-<!--
-Screenshots: save them in docs/screenshots/ with these names, then delete this comment line and the one at the end.
 <p>
-  <img src="docs/screenshots/fixtures.png" width="220" alt="Fixtures for a chosen date">
-  <img src="docs/screenshots/match.png" width="220" alt="Match odds and placing a prediction">
-  <img src="docs/screenshots/wallet.png" width="220" alt="Wallet with settled predictions">
+  <img src="docs/screenshots/fixtures.png" width="200" alt="Fixtures for a chosen date">
+  <img src="docs/screenshots/date.png" width="200" alt="Picking a date">
+  <img src="docs/screenshots/match.png" width="200" alt="Match screen with prediction buttons">
+  <img src="docs/screenshots/login.png" width="200" alt="Sign in screen">
 </p>
--->
 
 ## Features
 
